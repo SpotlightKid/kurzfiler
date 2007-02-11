@@ -1,0 +1,9 @@
+KurzFiler.jar
+classes
+.settings
+KurzFiler*jar
+mrulist.dat
+.kf-mrulist.dat
+.project
+.cdtproject
+.classpath
