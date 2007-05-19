@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jardesc>
-<jar path="C:/Entwicklung/eclipse_work/KurzFiler1.0/KurzFiler.jar"/>
-<options buildIfNeeded="true" compress="true" descriptionLocation="/KurzFiler1.0/jarwizard.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+<jar path="C:/Dokumente und Einstellungen/mahal/workspace/KurzFiler-SF/KurzFiler.jar"/>
+<options buildIfNeeded="true" compress="true" descriptionLocation="/KurzFiler-SF/jarwizard.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
 <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
 <selectedProjects/>
-<manifest generateManifest="false" mainClassHandleIdentifier="=KurzFiler1.0/&lt;kfcore{KurzFiler.java[KurzFiler" manifestLocation="/KurzFiler1.0/Manifest.mf" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+<manifest generateManifest="false" manifestLocation="/KurzFiler-SF/Manifest.mf" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
 <sealing sealJar="true">
 <packagesToSeal/>
 <packagesToUnSeal/>
 </sealing>
 </manifest>
 <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;filemethods"/>
-<file path="/KurzFiler1.0/resources/text_fr.properties"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;filemethods.wav"/>
-<file path="/KurzFiler1.0/resources/redo.gif"/>
-<file path="/KurzFiler1.0/resources/save.gif"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;kurzobjects.keymaps"/>
-<file path="/KurzFiler1.0/resources/text_pl.properties"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;kurzobjects"/>
-<file path="/KurzFiler1.0/resources/kurzfiler.gif"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;filemethods.kurzweil"/>
-<file path="/KurzFiler1.0/resources/text.properties"/>
-<file path="/KurzFiler1.0/resources/text_ja.properties"/>
-<file path="/KurzFiler1.0/resources/text_it.properties"/>
-<file path="/KurzFiler1.0/resources/text_de.properties"/>
-<file path="/KurzFiler1.0/resources/undo.gif"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;kfcore.dnd"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;kfcore.commands"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;resources{Messages.java"/>
-<file path="/KurzFiler1.0/resources/text_es.properties"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;dialogs.runtimemsg"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;dialogs"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;kfcore.mrulist"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;kfcore"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;kurzobjects.samples"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;kfcore.fillmodes"/>
-<file path="/KurzFiler1.0/resources/open.gif"/>
-<file path="/KurzFiler1.0/resources/text_nl.properties"/>
-<file path="/KurzFiler1.0/resources/new.gif"/>
-<javaElement handleIdentifier="=KurzFiler1.0/&lt;resources{Images.java"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;resources{Messages.java"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;kurzobjects.samples"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;dialogs"/>
+<file path="/KurzFiler-SF/resources/text_fr.properties"/>
+<file path="/KurzFiler-SF/resources/text_it.properties"/>
+<file path="/KurzFiler-SF/resources/text_de.properties"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;kfcore"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;filemethods.kurzweil"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;kfcore.commands"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;dialogs.runtimemsg"/>
+<file path="/KurzFiler-SF/resources/text.properties"/>
+<file path="/KurzFiler-SF/resources/text_ja.properties"/>
+<file path="/KurzFiler-SF/resources/kurzfiler.gif"/>
+<file path="/KurzFiler-SF/resources/new.gif"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;kurzobjects.keymaps"/>
+<file path="/KurzFiler-SF/resources/undo.gif"/>
+<file path="/KurzFiler-SF/resources/text_es.properties"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;kurzobjects"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;resources{Images.java"/>
+<file path="/KurzFiler-SF/resources/save.gif"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;kfcore.dnd"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;kfcore.fillmodes"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;filemethods.wav"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;filemethods"/>
+<file path="/KurzFiler-SF/resources/text_nl.properties"/>
+<javaElement handleIdentifier="=KurzFiler-SF/&lt;kfcore.mrulist"/>
+<file path="/KurzFiler-SF/resources/open.gif"/>
+<file path="/KurzFiler-SF/resources/redo.gif"/>
+<file path="/KurzFiler-SF/resources/text_pl.properties"/>
 </selectedElements>
 </jardesc>

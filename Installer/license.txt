@@ -1,5 +1,5 @@
 KurzFiler - A Kurzweil(tm) K2x00 soundfile editor
-Copyright (c) 2001-06 Marc Halbruegge
+Copyright (c) 2001-07 Marc Halbruegge
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
