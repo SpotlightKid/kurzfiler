@@ -128,7 +128,12 @@ public class KSample extends KObject {
 		for (int j=0;b[j]!=0; j++) {
 			name+=(char)b[j];
 		}
-		setName (name);
+		try {
+			// some .k26 files contain names that are too long for a K2000
+			setName (name);
+		} catch (Exception e) {
+			// do nothing
+		}
 		
 		baseID		= f.readShort();
 		numHeaders	= f.readShort();

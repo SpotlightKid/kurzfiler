@@ -173,7 +173,12 @@ public class KKeymap extends KObject {
 		for (j = 0; b[j] != 0; j++) {
 			name += (char) b[j];
 		}
-		setName(name);
+		try {
+			// some .k26 files contain names that are too long for a K2000
+			setName (name);
+		} catch (Exception e) {
+			// do nothing
+		}
 		
 		b = null;
 
