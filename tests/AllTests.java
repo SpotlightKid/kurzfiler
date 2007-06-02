@@ -18,10 +18,9 @@ public class AllTests {
 		//$JUnit-BEGIN$
 		for (int i=0;i<1; i++) {
 			suite.addTest(new TestSuite(KFileTest.class));
-			//suite.addTest(new TestSuite(tests.oldbugs.KFileTest.class));
-			//suite.addTest(new TestSuite(tests.undoredo.KFileTest.class));
-			//suite.addTest(new TestSuite(tests.oldbugs.KFileTest.class));
-			//suite.addTest(new TestSuite(tests.bug061029.SamplePeriodTest.class));
+			suite.addTest(new TestSuite(tests.undoredo.KFileTest.class));
+			suite.addTest(new TestSuite(tests.oldbugs.KFileTest.class));
+			suite.addTest(new TestSuite(tests.bug061029.SamplePeriodTest.class));
 		}
 		//$JUnit-END$
 		return suite;
