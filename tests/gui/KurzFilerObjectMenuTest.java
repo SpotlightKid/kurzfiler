@@ -47,6 +47,18 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		assertEquals(1, getObj().getSize()); 
 	}
 	
+	private void loadFile(String fname) {
+		RunCommand(resources.Messages.getString("KurzFiler.Open_Command"));
+
+		typeString("tests");
+		typeEnter();
+		typeBackspace(5);
+		typeString(fname);
+		typeEnter();
+
+		waitForLoadCompletion();
+	}
+	
 	private void selectAll() {
 		//typeMetaChar(resources.Messages.getString("KurzFiler.EditMenuMnem"));
 		//typeChar(resources.Messages.getString("KurzFiler.Select_all_Mnem"));
@@ -276,5 +288,26 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 
 		// Ergebnis prüfen 
 		saveAndCompareTo("tests/TestNewKeymap.krz");
+	}	
+	
+	public void testCompactKeymap2oscs() {
+		resetObject();
+		loadFile("2oscs.krz");
+	
+		// Kompaktieren
+		selectAll();
+		
+		//typeMetaChar(resources.Messages.getString("KurzFiler.ObjectMenuMnem"));
+		//typeChar(resources.Messages.getString("KurzFiler.KeymapMenuMnem"));
+		//typeChar(resources.Messages.getString("KurzFiler.Compact_Keymap_Mnem"));
+		RunCommand(resources.Messages.getString("KurzFiler.Compact_Keymap_Command"));
+
+		assertTrue(! getObj().isEmpty());
+		assertTrue(getObj().canUndo());
+		assertTrue(! getObj().canRedo());
+		assertEquals(9, getObj().getSize()); 
+
+		// Ergebnis prüfen 
+		saveAndCompareTo("tests/2oscsCompacted.krz");
 	}	
 }
