@@ -664,7 +664,7 @@ public class KurzFiler extends JFrame implements MruActionFactory {
 		}
 	}
 
-	private void addMenuItem(KCommand command, JMenu menu) {
+	protected void addMenuItem(KCommand command, JMenu menu) {
 		JMenuItem mi = new JMenuItem(command);
 		if (command.getShortCut() != 0) {
 			mi.setAccelerator(command.getKeyStroke());

@@ -21,6 +21,7 @@ public class AllTests {
 			suite.addTest(new TestSuite(tests.undoredo.KFileTest.class));
 			suite.addTest(new TestSuite(tests.oldbugs.KFileTest.class));
 			suite.addTest(new TestSuite(tests.bug061029.SamplePeriodTest.class));
+			suite.addTest(new TestSuite(tests.gui.KurzFilerObjectMenuTest.class));
 		}
 		//$JUnit-END$
 		return suite;
