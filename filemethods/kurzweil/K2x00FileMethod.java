@@ -134,7 +134,7 @@ public class K2x00FileMethod extends FileMethod {
 	private boolean readobjects() {
 		KObject ko;
 		int Blocksize;
-		int Hash;
+		int curHash;
 		long pos;
 
 		if (theFile != null) {
@@ -148,29 +148,30 @@ public class K2x00FileMethod extends FileMethod {
 			while (Blocksize < 0) {
 
 				try {
-					Hash = theFile.readUnsignedShort();
+					curHash = theFile.readUnsignedShort();
 
-					switch (KHash.getType(Hash)) {
+					switch (KHash.getType(curHash)) {
 						case KHash.T_SAMPLE :
-							ko = new KSample(Hash, theFile);
+							ko = new KSample(curHash, theFile);
 							break;
 						case KHash.T_KEYMAP :
-							ko = new KKeymap(Hash, theFile);
+							ko = new KKeymap(curHash, theFile);
 							break;
 						case KHash.T_PROGRAM :
-							ko = new KProgram(Hash, theFile);
+							ko = new KProgram(curHash, theFile);
 							break;
 						default :
-							ko = new KDefault(Hash, theFile);
+							ko = new KDefault(curHash, theFile);
 							break;
 					}
 
-					kobjlist.put(new Integer(Hash), ko);
+					kobjlist.put(new Integer(curHash), ko);
 
 					theFile.seek(pos - Blocksize - 4);
 					Blocksize = theFile.readInt();
 					pos = theFile.getFilePointer();
 				} catch (IOException e) {
+					System.err.println(e.getMessage());
 					return false;
 				}
 

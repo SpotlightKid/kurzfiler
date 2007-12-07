@@ -52,9 +52,9 @@ public class KDefault extends KObject {
 		b= new byte[ofs-2];
 		f.readFully(b);
 		
-		String name=new String();
-		for (int j=0;b[j]!=0; j++) {
-			name+=(char)b[j];
+		String name = new String();
+		for (int j=0; j<ofs-2 && b[j]!=0; j++) {
+			name += (char) b[j];
 		}
 		try {
 			// some .k26 files contain names that are too long for a K2000
@@ -62,7 +62,7 @@ public class KDefault extends KObject {
 		} catch (Exception e) {
 			// do nothing
 		}
-
+		
 		count=size-ofs-4;
 
 		data=new byte[count];

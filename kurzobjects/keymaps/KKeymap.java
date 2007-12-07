@@ -170,7 +170,7 @@ public class KKeymap extends KObject {
 		f.readFully(b);
 
 		String name = new String();
-		for (j = 0; b[j] != 0; j++) {
+		for (j = 0; j<ofs-2 && b[j]!=0; j++) {
 			name += (char) b[j];
 		}
 		try {

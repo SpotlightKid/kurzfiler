@@ -98,7 +98,7 @@ public class KProgram extends KObject {
 		throws IOException {
 			tag=f.readByte();
 			data=new byte[len(tag)];
-			if (data==null) throw new IOException();
+			if (data==null) throw new IOException("wrong Segment length");
 			f.readFully(data);
 		}
 
@@ -129,11 +129,17 @@ public class KProgram extends KObject {
 		b= new byte[ofs-2];
 		f.readFully(b);
 		
-		String name=new String();
-		for (int j=0;b[j]!=0; j++) {
-			name+=(char)b[j];
+		String name = new String();
+		for (int j = 0; j<ofs-2 && b[j]!=0; j++) {
+			name += (char) b[j];
 		}
-		setName(name);
+		try {
+			// some .k26 files contain names that are too long for a K2000
+			setName (name);
+		} catch (Exception e) {
+			// do nothing
+		}
+		
 
 		pos=f.getFilePointer();
 

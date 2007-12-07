@@ -51,7 +51,7 @@ public class KSample extends KObject {
 	protected Vector<Soundfilehead> headers;
 	protected Vector<Envelope> envelopes;
 
-	private class headerIterator implements Iterator {
+	private class headerIterator implements Iterator<Short> {
 		private int pos;
 		public headerIterator () {
 			pos=0;
@@ -59,7 +59,7 @@ public class KSample extends KObject {
 		public boolean hasNext() {
 			return pos<=numHeaders;
 		}
-		public Object next() {
+		public Short next() {
 			short h=(short)(pos);
 			pos++;
 			if (isStereo()) pos++;
@@ -124,9 +124,9 @@ public class KSample extends KObject {
 		b= new byte[ofs-2];
 		f.readFully(b);
 		
-		String name=new String();
-		for (int j=0;b[j]!=0; j++) {
-			name+=(char)b[j];
+		String name = new String();
+		for (int j=0; j<ofs-2 && b[j]!=0; j++) {
+			name += (char) b[j];
 		}
 		try {
 			// some .k26 files contain names that are too long for a K2000
@@ -134,6 +134,7 @@ public class KSample extends KObject {
 		} catch (Exception e) {
 			// do nothing
 		}
+
 		
 		baseID		= f.readShort();
 		numHeaders	= f.readShort();
@@ -199,7 +200,7 @@ public class KSample extends KObject {
 		writefinish(f,l);
 	}
 
-	public Iterator getIterator () {
+	public Iterator<Short> getIterator () {
 		return new headerIterator();
 	}
 	
