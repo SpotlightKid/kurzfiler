@@ -3,6 +3,7 @@ KurzFiler
 A Soundfile Editor for Kurzweil Samplers
 
 Copyright (c) 2003 Marc Halbruegge
+Copyright (c) 2007 Sven Thoennissen
   
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
