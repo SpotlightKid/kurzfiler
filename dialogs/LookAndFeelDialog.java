@@ -61,8 +61,8 @@ public class LookAndFeelDialog extends OKCancelDialog {
 	static String motif = "Motif"; //$NON-NLS-1$
 	static String motifClassName = "com.sun.java.swing.plaf.motif.MotifLookAndFeel"; //$NON-NLS-1$
 
-	static String mac = "Macintosh"; //$NON-NLS-1$
-	static String macClassName = "com.sun.java.swing.plaf.mac.MacLookAndFeel"; //$NON-NLS-1$
+	static String mac = "Mac OS X"; //$NON-NLS-1$
+	static String macClassName = "apple.laf.AquaLookAndFeel"; //$NON-NLS-1$
 
 	static String windows = "Windows"; //$NON-NLS-1$
 	static String windowsClassName = "com.sun.java.swing.plaf.windows.WindowsLookAndFeel"; //$NON-NLS-1$
@@ -150,7 +150,7 @@ public class LookAndFeelDialog extends OKCancelDialog {
 			motifButton.setSelected(true);
 			lookandfeel = motifClassName;
 		} else if (lnfName.indexOf("mac") >= 0) { //$NON-NLS-1$
-			motifButton.setSelected(true);
+			macButton.setSelected(true);
 			lookandfeel = macClassName;
 		} else {
 			windowsButton.setSelected(true);

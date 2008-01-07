@@ -56,6 +56,7 @@ import filemethods.kurzweil.SaveK2500noKDFXMethod;
 import filemethods.kurzweil.SaveK2500withKDFXMethod;
 import filemethods.wav.LoadWaveMethod;
 import filemethods.wav.SaveWaveMethod;
+import filemethods.iff.LoadIffMethod;
 import resources.Messages;
 
 public class KFile extends AbstractTableModel {
@@ -80,6 +81,7 @@ public class KFile extends AbstractTableModel {
 		fillmode = new kfcore.fillmodes.FillModeFill();
 		importRoutines.add(new LoadK2x00Method());
 		importRoutines.add(new LoadWaveMethod());
+		importRoutines.add(new LoadIffMethod());
 		exportRoutines.add(new SaveK2000Method());
 		exportRoutines.add(new SaveK2500noKDFXMethod());
 		exportRoutines.add(new SaveK2500withKDFXMethod());
