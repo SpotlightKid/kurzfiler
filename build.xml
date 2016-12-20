@@ -3,12 +3,10 @@
 <project name="KurzFiler" default="main"  basedir=".">
 	<property name="build" value="${basedir}/classes" />
 	<property name="src" value="${basedir}" />
-	
-	<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-	
+
 	<target name="main">
 		<mkdir dir="${build}"/>
-	
+
 		<javac srcdir="${src}"
 	         destdir="${build}"
 	         debug="on">
@@ -16,15 +14,15 @@
 		    <classpath>
 		      <pathelement location="${basedir}/../org.eclipse.jdt.core/bin"/>
 		    </classpath>
-		</javac>		
+		</javac>
 	</target>
-	
+
 	<target name="jar">
-		<jar jarfile="KurzFiler.jar" 
-			manifest="Manifest.mf"> 
-		<fileset dir="${build}" excludes="tests/*" />	
-		<fileset dir="${src}" includes="resources/*.gif" />	
-		<fileset dir="${src}" includes="resources/*.properties" />	
+		<jar jarfile="KurzFiler.jar"
+			manifest="Manifest.mf">
+		<fileset dir="${build}" excludes="tests/*" />
+		<fileset dir="${src}" includes="resources/*.gif" />
+		<fileset dir="${src}" includes="resources/*.properties" />
 		</jar>
 	</target>
 </project>
