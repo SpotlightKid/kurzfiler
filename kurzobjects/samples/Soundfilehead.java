@@ -45,7 +45,7 @@ public class Soundfilehead
 	public byte altVolumeAdjust;
 	public short maxPitch;
 	public short offsetToName;
-	//Start - End ist wortweise gezählt!!
+	//Start - End ist wortweise gezÃ¤hlt!!
 	public int sampleStart;
 	public int altSampleStart;
 	public int sampleLoopStart;
@@ -89,7 +89,7 @@ public class Soundfilehead
 		altOffsetToEnvelope	= s.altOffsetToEnvelope;
 		samplePeriod	= s.samplePeriod;
 		sampledata  	= s.sampledata;
-		//nur Referenz auf Samples übernehmen!!
+		//nur Referenz auf Samples Ã¼bernehmen!!
 	};
 
 	public Soundfilehead(RandomAccessFile f)
@@ -205,7 +205,7 @@ public class Soundfilehead
 			sampleLoopStart+=offset;
 			altSampleStart+=offset;
 			sampleStart+=offset;
-			return sampleEnd+1; //neues Offset für nächstes Sample
+			return sampleEnd+1; //neues Offset fÃ¼r nÃ¤chstes Sample
 		}
 		else return offset;
 	}

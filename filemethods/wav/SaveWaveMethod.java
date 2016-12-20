@@ -76,7 +76,7 @@ public class SaveWaveMethod extends WavFileMethod {
 					sfh2 = ks.getheader(headnum + 1);
 					fmt.channels = 2;
 					fmt.setSamplerate((int) Math.floor(1000000000L / sfh.samplePeriod));
-					//kann zu Rundungsfehlern führen!!
+					//kann zu Rundungsfehlern fÃ¼hren!!
 					fmt.bitspersample = 16;
 
 					data.data = new byte[sfh.sampledata.length * 2];
@@ -92,7 +92,7 @@ public class SaveWaveMethod extends WavFileMethod {
 				} else {
 					fmt.channels = 1;
 					fmt.setSamplerate((int) Math.floor(1000000000L / sfh.samplePeriod));
-					//kann zu Rundungsfehlern führen!!
+					//kann zu Rundungsfehlern fÃ¼hren!!
 					fmt.bitspersample = 16;
 
 					data.data = new byte[sfh.sampledata.length];

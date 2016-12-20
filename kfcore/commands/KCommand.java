@@ -22,7 +22,7 @@ public abstract class KCommand extends AbstractAction implements StateListener {
 	public KCommand(KurzFiler filer) {
 		this.filer = filer;
 		putValue(Action.NAME, getName());
-		if (getMnemonic()!=0 && getMnemonic()!='!') //! ist Zeichen für nicht vorhandenes!
+		if (getMnemonic()!=0 && getMnemonic()!='!') //! ist Zeichen fÃ¼r nicht vorhandenes!
 			putValue(Action.MNEMONIC_KEY, new Integer(getMnemonic()));
 		putValue(Action.ACCELERATOR_KEY, getKeyStroke());
 	}

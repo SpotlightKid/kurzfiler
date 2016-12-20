@@ -26,7 +26,7 @@ abstract public class AbstractMruAction extends AbstractAction implements Proper
 		return mru.getFiles().get(index);
 	}
 	public void propertyChange(PropertyChangeEvent evt) {
-		// Hässlich, aber tut!
+		// HÃ¤sslich, aber tut!
 		if ((Integer)evt.getNewValue()==index)
 			putValue(Action.NAME, String.valueOf(index+1)+" "+mru.getFiles().get(index).getName());
 	}

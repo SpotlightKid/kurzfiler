@@ -122,7 +122,7 @@ public class KObject {
 		int s;
 		s=k_name.length();
 		s+= ((s&1)==1) ? 1 : 2; //name mit null beenden, padden
-		s+= 4; //ID, Größe
+		s+= 4; //ID, GrÃ¶ÃŸe
 
 		return s;
 	}
@@ -154,7 +154,7 @@ public class KObject {
 			f.writeShort(k_hash);
 			pos=f.getFilePointer();
 
-			f.writeShort(ofs); //dummy für die Länge des Objects
+			f.writeShort(ofs); //dummy fÃ¼r die LÃ¤nge des Objects
 
 			n=k_name.length();
 			if ((n&1)==0) {
@@ -174,7 +174,7 @@ public class KObject {
 			return 0;
 		}
 
-		return pos; //Position für die Länge
+		return pos; //Position fÃ¼r die LÃ¤nge
 	}
 
 	protected void writefinish (RandomAccessFile f, long l)

@@ -35,7 +35,7 @@ class Loader implements Runnable {
 				this.filer.getFileObject().setDirty(false);
 
 			} else {
-				//in ein tempor‰res KFile Object laden
+				//in ein tempor√§res KFile Object laden
 				KFile theother = new KFile();
 				theother.importData(
 					owner.getFiles()[owner.index].getPath(),

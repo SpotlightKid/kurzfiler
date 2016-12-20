@@ -204,7 +204,7 @@ public class LoadWaveMethod extends WavFileMethod {
 			for (int i = 0; i < datalen * 2; i++, i++) {
 				sh.sampledata[i] =
 					(byte) (data.data[i >> 1] ^ 0x80);
-				//höchstes Bit invertieren!!
+				//hÃ¶chstes Bit invertieren!!
 			}
 			
 			try {

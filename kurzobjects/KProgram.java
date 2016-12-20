@@ -184,7 +184,7 @@ public class KProgram extends KObject {
 		for (Enumeration<Segment> el=segmente.elements(); el.hasMoreElements(); ) 
 			el.nextElement().write(f);
 	
-		//noch ein abschlieﬂendes Leerwort!!
+		//noch ein abschlie√üendes Leerwort!!
 		try {
 			f.writeShort(0);
 		} catch (Exception e) {

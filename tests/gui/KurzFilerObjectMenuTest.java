@@ -102,7 +102,7 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		loadFile();
 		selectAll();
 		setRootKeyToC6();
-		// Ergebnis prüfen 
+		// Ergebnis prÃ¼fen 
 		saveAndCompareTo("tests/TestRootKey.krz");
 	}	
 
@@ -121,7 +121,7 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		//typeChar(resources.Messages.getString("KurzFiler.New_Drumset_Mnem"));
 		RunCommand(resources.Messages.getString("KurzFiler.New_Drumset_Command"));
 
-		//Namen ändern 	
+		//Namen Ã¤ndern 	
 		typeString("km");
 		typeTab();	
 		typeString("drums");
@@ -134,7 +134,7 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		// Anzahl Objekte 
 		assertEquals(3, getObj().getSize()); 
 	
-		// Ergebnis prüfen 
+		// Ergebnis prÃ¼fen 
 		saveAndCompareTo("tests/TestDrumProgram.krz");
 	}	
 
@@ -153,7 +153,7 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		//typeChar(resources.Messages.getString("KurzFiler.New_Instrument_Mnem"));
 		RunCommand(resources.Messages.getString("KurzFiler.New_Instrument_Command"));
 
-		//Namen ändern 	
+		//Namen Ã¤ndern 	
 		typeString("km");
 		typeTab();	
 		typeString("chromatisch");
@@ -166,7 +166,7 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		// Anzahl Objekte 
 		assertEquals(3, getObj().getSize()); 
 	
-		// Ergebnis prüfen 
+		// Ergebnis prÃ¼fen 
 		saveAndCompareTo("tests/TestChromaticalProgram.krz");
 	}	
 
@@ -185,7 +185,7 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		//typeChar(resources.Messages.getString("KurzFiler.New_Instrument_Mnem"));
 		RunCommand(resources.Messages.getString("KurzFiler.New_Instrument_Command"));
 
-		//Namen ändern 	
+		//Namen Ã¤ndern 	
 		typeString("km");
 		typeTab();	
 		typeString("chromatisch");
@@ -211,7 +211,7 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		assertTrue(! getObj().canRedo());
 		assertEquals(3, getObj().getSize()); 
 
-		// Ergebnis prüfen 
+		// Ergebnis prÃ¼fen 
 		saveAndCompareTo("tests/TestCompactedKeymap.krz");
 	}	
 
@@ -229,7 +229,7 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		//typeChar(resources.Messages.getString("KurzFiler.New_Instrument_Mnem"));
 		RunCommand(resources.Messages.getString("KurzFiler.New_Instrument_Command"));
 
-		//Namen ändern 	
+		//Namen Ã¤ndern 	
 		typeString("km");
 		typeTab();	
 		typeString("chromatisch");
@@ -263,7 +263,7 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		//typeChar(resources.Messages.getString("KurzFiler.New_Keymap_Mnem"));
 		RunCommand(resources.Messages.getString("KurzFiler.New_Keymap_Command"));
 
-		// Für verschiedene Velocities wählen
+		// FÃ¼r verschiedene Velocities wÃ¤hlen
 		typeTab();	
 		typeTab();	
 		typeTab();	
@@ -274,7 +274,7 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		typeTab();	
 		typeSpace();
 
-		//Namen ändern 	
+		//Namen Ã¤ndern 	
 		typeString("velosplit");
 		typeTab();	
 		typeString("prg");
@@ -286,7 +286,7 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		assertTrue(! getObj().canRedo());
 		assertEquals(5, getObj().getSize()); 
 
-		// Ergebnis prüfen 
+		// Ergebnis prÃ¼fen 
 		saveAndCompareTo("tests/TestNewKeymap.krz");
 	}	
 	
@@ -307,7 +307,7 @@ public class KurzFilerObjectMenuTest extends TestcaseWithRobot {
 		assertTrue(! getObj().canRedo());
 		assertEquals(9, getObj().getSize()); 
 
-		// Ergebnis prüfen 
+		// Ergebnis prÃ¼fen 
 		saveAndCompareTo("tests/2oscsCompacted.krz");
 	}	
 }

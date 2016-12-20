@@ -168,14 +168,14 @@ abstract class WavFileMethod extends FileMethod {
 				//bytespersecond ist uns egal
 
 				f.readShort();
-				//BlockAlign, z.B. 4 für stereo ínterleaved 16bit
+				//BlockAlign, z.B. 4 fÃ¼r stereo Ã­nterleaved 16bit
 
 				bitspersample = f.readByte();
 				f.readByte();
 
 				for (int i = 16; i < fmtlen; i++)
 					f.readByte();
-				//sicherstellen, daß chunk zuende ist
+				//sicherstellen, daÃŸ chunk zuende ist
 			}
 		}
 

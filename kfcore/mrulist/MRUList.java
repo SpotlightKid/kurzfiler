@@ -92,7 +92,7 @@ public class MRUList implements Serializable {
 			for (int i=0;i<getFiles().size();i++)
 				menu.add(factory.CreateMRUListAction(this,i));
 			} catch (NullPointerException e) {
-				// Falls in der Datei Müll steht: neu initialisieren
+				// Falls in der Datei MÃ¼ll steht: neu initialisieren
 				setFiles(new LinkedList<File>());
 			}
 		}
